@@ -8,6 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ProofBox</a>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link active">Accueil</a>
+                    <a href="technologie.html" class="nav-link">Technologie</a>
+                    <a href="tarifs.html" class="nav-link">Tarifs</a>
+                    <a href="a-propos.html" class="nav-link">À propos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <!-- Section Hero -->
     <section class="hero" id="hero">
         <div class="container">
@@ -54,35 +69,29 @@
         </div>
     </section>
 
-    <!-- Section Analyse du Marché -->
+    <!-- Section Évaluation du Risque -->
     <section class="problem-solution" id="problem">
         <div class="container">
             <div class="section-header">
-                <h2>Érosion de la Confiance et Risque Transactionnel P2P.</h2>
+                <h2>Le Risque Non-Prouvé : Un Coût Caché pour l'Économie P2P.</h2>
                 <p class="stat">Le risque de litige non prouvé représente un coût caché estimé à 450M€ par an en Europe pour les plateformes P2P.</p>
             </div>
             
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="icon">📦</div>
-                    <h3>Coût plateforme</h3>
-                    <p>Frais de litige, décotes et remboursements absorbent vos marges et dégradent la crédibilité marque.</p>
+            <div class="comparison-grid">
+                <div class="comparison-card status-quo">
+                    <div class="card-badge">Le Statut Quo</div>
+                    <h3>Dépendance à la Subjectivité</h3>
+                    <p>Les litiges sont tranchés sur la base de la bonne foi ou de preuves facilement falsifiables.</p>
+                    <h3>Coûts Opérationnels Élevés</h3>
+                    <p>Les plateformes et les intermédiaires absorbent le coût du traitement des réclamations non fondées.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="icon">⚖️</div>
-                    <h3>Friction utilisateur</h3>
-                    <p>Expérience de résolution lente, support saturé, perception d'injustice côté vendeur comme côté acheteur.</p>
+                <div class="comparison-card impact">
+                    <div class="card-badge">L'Impact avec ProofBox</div>
+                    <h3>Standardisation de la Preuve</h3>
+                    <p>Introduction d'un certificat tiers qui élimine l'ambiguïté en cas de contestation.</p>
+                    <h3>Réduction des Litiges</h3>
+                    <p>Automatisation de la décision grâce à la validation IA, allégeant la charge administrative.</p>
                 </div>
-                <div class="problem-card">
-                    <div class="icon">🔍</div>
-                    <h3>Preuves non fiables</h3>
-                    <p>Photos/vidéos manipulables en 2 clics, aucune chaîne de confiance numérique ni traçabilité opposable.</p>
-                </div>
-            </div>
-
-            <div class="solution-highlight">
-                <h3>"ProofBox comble cette lacune en introduisant un standard de preuve numérique certifiée."</h3>
-                <p>Nous scellons la vidéo et le contexte transactionnel pour rendre chaque litige arbitrable en minutes, pas en semaines.</p>
             </div>
         </div>
     </section>
@@ -116,23 +125,20 @@
     <section class="technology" id="tech">
         <div class="container">
             <div class="tech-header">
-                <h2>TrustVerify : L'Algorithme de Certification Incontestable.</h2>
+                <h2>TrustVerify : Notre Moteur de Confiance Technique.</h2>
             </div>
             <div class="tech-features">
-                <div class="tech-feature">
-                    <div class="tech-icon">👁️</div>
-                    <h3>Vérification spatio-temporelle</h3>
-                    <p>Vision par ordinateur pour détecter jointures, coupures, sauts de trames et deepfakes à bas bruit sur le flux vidéo.</p>
+                <div class="tech-feature clean">
+                    <h3>Contrôle d'Intégrité de Flux (CI-Flow)</h3>
+                    <p>L'algorithme analyse l'ADN temporel de la vidéo pour détecter toute anomalie d'édition ou de manipulation.</p>
                 </div>
-                <div class="tech-feature">
-                    <div class="tech-icon">⏰</div>
-                    <h3>Ancrage temps & crypto</h3>
-                    <p>Code Dynamique hashé et lié à l'identifiant de session + horodatage serveur sécurisé : une chaîne de confiance immuable.</p>
+                <div class="tech-feature clean">
+                    <h3>Ancrage Cryptographique de Session</h3>
+                    <p>Chaque preuve est associée à un identifiant unique (le Code Dynamique) validé par un serveur de temps sécurisé.</p>
                 </div>
-                <div class="tech-feature">
-                    <div class="tech-icon">🔐</div>
-                    <h3>Audit de conformité</h3>
-                    <p>Rapports d'audit détaillés pour les plateformes B2B, prêts à alimenter vos décisions automatisées de litige.</p>
+                <div class="tech-feature clean">
+                    <h3>Architecture B2B-Ready</h3>
+                    <p>Conçu pour s'intégrer via API aux plateformes e-commerce nécessitant un audit de conformité rapide.</p>
                 </div>
             </div>
             <div class="roadmap">
@@ -142,14 +148,23 @@
         </div>
     </section>
 
-    <!-- Section CTA Final -->
+    <!-- Section Partenariats et Projections -->
     <section class="final-cta" id="cta">
         <div class="container">
-            <h2>Notre Vision : Standardiser la Preuve Numérique.</h2>
-            <p>ProofBox n'est pas une application : c'est le futur protocole de certification pour toutes les transactions à risque.</p>
+            <h2>L'Opportunité : Devenir le Protocole de Confiance par Défaut.</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>Proposition de Valeur pour les Partenaires</h3>
+                    <p>Nous offrons aux grandes plateformes la possibilité de réduire les pertes liées à la fraude et d'améliorer la satisfaction client grâce à une preuve technique neutre.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>Mise en Avant du PoC</h3>
+                    <p>Notre MVP est prêt et fonctionnel. Découvrez l'efficacité de l'analyse TrustVerify en temps réel.</p>
+                </div>
+            </div>
             <div class="cta-buttons">
-                <button class="btn-primary large">Accéder au Dossier d'Investissement (Pitch Deck)</button>
-                <button class="btn-secondary">Testez la Démo MVP</button>
+                <button class="btn-primary large">Accéder à la Démo Live du MVP</button>
+                <button class="btn-secondary">Contacter l'Équipe pour un Partenariat B2B</button>
             </div>
             <div class="contact-info">
                 <a href="mailto:contact@proofbox.com">contact@proofbox.com</a>
@@ -157,6 +172,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProofBox. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">CGU</a>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

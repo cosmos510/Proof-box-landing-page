@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologie - ProofBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ProofBox</a>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="technologie.html" class="nav-link active">Technologie</a>
+                    <a href="tarifs.html" class="nav-link">Tarifs</a>
+                    <a href="a-propos.html" class="nav-link">À propos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>TrustVerify : Notre Moteur de Confiance Technique</h1>
+            <p class="lead">Une architecture de certification vidéo pensée pour l'intégrité, la traçabilité et l'opposabilité juridique.</p>
+        </div>
+    </section>
+
+    <!-- Section Architecture Technique -->
+    <section class="tech-detail">
+        <div class="container">
+            <h2>Architecture de Certification</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-detail-card">
+                    <h3>Contrôle d'Intégrité de Flux (CI-Flow)</h3>
+                    <p><strong>Principe</strong> : L'algorithme analyse la continuité temporelle du flux vidéo en détectant les anomalies de trames.</p>
+                    <p><strong>Méthode</strong> : Chaque trame est horodatée côté serveur avec validation de la séquence. Toute discontinuité (coupure, splice, insertion) est flaggée.</p>
+                    <p><strong>Détection</strong> : Vision par ordinateur pour identifier les sauts de métadonnées, variations anormales de luminosité, artefacts de compression révélateurs d'édition.</p>
+                </div>
+
+                <div class="tech-detail-card">
+                    <h3>Ancrage Cryptographique de Session</h3>
+                    <p><strong>Code Dynamique</strong> : Identifiant unique généré par algorithme de hachage (SHA-256) lié à l'article déclaré et à la session utilisateur.</p>
+                    <p><strong>Horodatage sécurisé</strong> : Chaque session est scellée avec un timestamp serveur NTP (Network Time Protocol) pour garantir la chronologie.</p>
+                    <p><strong>Chaîne de confiance</strong> : Le hash du code, l'horodatage et les métadonnées vidéo sont archivés de manière immuable côté serveur.</p>
+                </div>
+
+                <div class="tech-detail-card">
+                    <h3>Validation Multi-Étapes</h3>
+                    <p><strong>Étape 1</strong> : Vérification de présence du Code Dynamique dans au moins 80% des trames du flux.</p>
+                    <p><strong>Étape 2</strong> : Analyse de l'ADN temporel pour détecter coupures, ralentis ou accélérations artificielles.</p>
+                    <p><strong>Étape 3</strong> : Comparaison avec la base de signatures connues de deepfakes légers et de manipulations courantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Opposabilité -->
+    <section class="legal-tech">
+        <div class="container">
+            <h2>Opposabilité Juridique</h2>
+            <div class="legal-grid">
+                <div class="legal-card">
+                    <h3>Certificat Numérique</h3>
+                    <p>Chaque preuve validée génère un Certificat Officiel ProofBox horodaté, signé et archivé. Ce certificat atteste de l'intégrité technique de la vidéo.</p>
+                </div>
+                <div class="legal-card">
+                    <h3>Conformité RGPD</h3>
+                    <p>Les données personnelles et vidéos sont traitées selon les standards RGPD. L'utilisateur conserve la pleine propriété de sa preuve.</p>
+                </div>
+                <div class="legal-card">
+                    <h3>Conditions Générales d'Utilisation</h3>
+                    <p>Le certificat est reconnu comme preuve technique tierce dans les litiges P2P. Consultez nos <a href="#" class="text-link">CGU complètes</a> pour les détails d'usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Roadmap Technique -->
+    <section class="tech-roadmap">
+        <div class="container">
+            <h2>Feuille de Route Technique</h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Q1 2026</div>
+                    <h3>Renforcement IA</h3>
+                    <p>Passage à un modèle de détection deepfake avancé (réseau neuronal convolutif) pour identifier les manipulations sophistiquées.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Q2 2026</div>
+                    <h3>API B2B</h3>
+                    <p>Ouverture d'une API REST pour intégration directe dans les workflows de médiation des plateformes partenaires.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-badge">Q3 2026</div>
+                    <h3>SDK Multi-plateforme</h3>
+                    <p>Déploiement React Native (iOS/Android) et SDK web pour une intégration native dans toute application P2P.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 ProofBox. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">CGU</a>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

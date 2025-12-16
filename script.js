@@ -59,19 +59,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // CTA final : Deck investissement
-    const finalDeckBtn = document.querySelector('.final-cta .btn-primary');
-    if (finalDeckBtn) {
-        finalDeckBtn.addEventListener('click', () => {
-            window.open('https://proofbox.com/investor-deck.pdf', '_blank');
-        });
-    }
-
-    // CTA final : Démo MVP
-    const finalDemoBtn = document.querySelector('.final-cta .btn-secondary');
+    // CTA final : Démo Live MVP (primaire)
+    const finalDemoBtn = document.querySelector('.final-cta .btn-primary');
     if (finalDemoBtn) {
         finalDemoBtn.addEventListener('click', () => {
             window.open('https://demo.proofbox.com', '_blank');
+        });
+    }
+
+    // CTA final : Contact B2B (secondaire)
+    const finalContactBtn = document.querySelector('.final-cta .btn-secondary');
+    if (finalContactBtn) {
+        finalContactBtn.addEventListener('click', () => {
+            window.location.href = 'mailto:contact@proofbox.com?subject=Demande de Partenariat B2B';
         });
     }
 });

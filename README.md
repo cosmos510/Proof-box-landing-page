@@ -1,37 +1,27 @@
-# ProofBox Landing Page
+# ProofBox – Landing Page d'intention
 
-Landing page professionnelle pour ProofBox - Le premier certificat vidéo incontestable garanti par l'Intelligence Artificielle.
+Cette landing page présente ProofBox comme le standard de preuve numérique pour sécuriser les transactions P2P et convaincre investisseurs/partenaires. Elle met l'accent sur l'enjeu marché, la proposition de valeur et l'usage concret plutôt que sur les détails techniques.
 
-## Structure
+## Ce que raconte la page
 
-- **index.html** - Structure HTML de la landing page
-- **styles.css** - Styles CSS modernes avec design Tech/Fintech
-- **script.js** - Interactions JavaScript et animations
+- Contexte : l'érosion de confiance et le coût caché des litiges P2P.
+- Proposition : ProofBox fournit un certificat vidéo incontestable, ancré par IA et code dynamique.
+- Procédure : comment la preuve est acquise et certifiée (session, capture, paiement, validation IA, certificat).
+- Vision : devenir le protocole de certification standard pour plateformes et opérateurs P2P.
+- Appel à l'action : accès au deck d'investissement et test de la démo MVP.
 
-## Sections
+## Fichiers utiles
 
-1. **Hero** - Titre accrocheur avec CTA principaux
-2. **Problème & Solution** - Présentation du problème P2P et de la solution ProofBox
-3. **Comment ça Marche** - Processus en 3 étapes
-4. **Technologie** - Présentation de TrustVerify et avantages techniques
-5. **CTA Final** - Appel à l'action pour pitch investisseur
+- index.html : contenu et sections de la page.
+- styles.css : identité visuelle (palette fintech, typographie, mises en forme).
+- script.js : comportements des boutons (liens deck, démo) et animations légères.
 
-## Fonctionnalités
+## Adapter en 2 minutes
 
-- Design responsive (mobile-first)
-- Animations au scroll
-- Mockup de téléphone interactif
-- Code dynamique animé
-- Boutons CTA configurables
-- Optimisé pour les investisseurs
+1. Ouvrir `script.js` et remplacer les URLs du deck investisseur et de la démo par vos liens.
+2. Ajuster les chiffres clés (ex : coût caché annuel) dans `index.html` si besoin.
+3. Ouvrir `index.html` dans le navigateur pour vérifier le rendu.
 
-## Configuration
+## Pitch en une phrase
 
-Modifiez les liens dans `script.js` :
-- URL de la démo MVP
-- Lien du dossier investisseur
-- Système de prise de RDV (Calendly)
-
-## Lancement
-
-Ouvrez simplement `index.html` dans votre navigateur ou déployez sur votre serveur web.
+ProofBox scelle la preuve vidéo d'une transaction P2P (intégrité, temporalité, identité) pour rendre chaque litige arbitrable en minutes, pas en semaines.
