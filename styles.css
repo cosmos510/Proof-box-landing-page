@@ -9,11 +9,11 @@
     --primary-color: #06b6d4;
     --secondary-color: #0b1224;
     --accent-color: #22d3ee;
-    --text-primary: #0b1224;
-    --text-secondary: #4b5563;
-    --background: #ffffff;
-    --surface: #eef3ff;
-    --border: #e2e8f0;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --background: #070d18;
+    --surface: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.1);
     --success: #10b981;
     --warning: #f59e0b;
     --error: #ef4444;
@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(11, 18, 36, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
@@ -75,12 +75,12 @@ body {
 
 .nav-link:hover {
     color: var(--text-primary);
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-link.active {
     color: var(--primary-color);
-    background: rgba(6, 182, 212, 0.1);
+    background: rgba(6, 182, 212, 0.15);
 }
 
 
@@ -297,7 +297,8 @@ body {
 /* Section Problème & Solution */
 .problem-solution {
     padding: 100px 0;
-    background: var(--surface);
+    background: radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.06), transparent 40%),
+                linear-gradient(135deg, #070d18 0%, #0b1628 100%);
 }
 
 .section-header {
@@ -309,18 +310,20 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: white;
 }
 
 .stat {
     font-size: 1.2rem;
-    color: var(--secondary-color);
-    background: linear-gradient(145deg, rgba(6, 182, 212, 0.12), rgba(6, 182, 212, 0.04));
+    color: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6px);
     padding: 20px;
     border-radius: 12px;
-    border: 1px solid rgba(6, 182, 212, 0.25);
+    border: 1px solid rgba(6, 182, 212, 0.3);
     max-width: 720px;
     margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .comparison-grid {
@@ -331,18 +334,20 @@ body {
 }
 
 .comparison-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 32px;
     border-radius: 16px;
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     position: relative;
 }
 
 .comparison-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .card-badge {
@@ -371,6 +376,7 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 20px;
+    color: white;
 }
 
 .comparison-card h3:first-of-type {
@@ -383,13 +389,18 @@ body {
 }
 
 .solution-highlight {
-    background: linear-gradient(145deg, rgba(6, 182, 212, 0.14), rgba(6, 182, 212, 0.06));
-    color: #0b1224;
+    background: rgba(6, 182, 212, 0.08);
+    backdrop-filter: blur(10px);
+    color: white;
     padding: 40px;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid rgba(6, 182, 212, 0.3);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+    border: 1px solid rgba(6, 182, 212, 0.4);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+.solution-highlight h3 {
+    color: white;
 }
 
 .solution-highlight h3 {
@@ -401,6 +412,8 @@ body {
 /* Section Comment ça Marche */
 .how-it-works {
     padding: 100px 0;
+    background: radial-gradient(circle at 20% 80%, rgba(34, 211, 238, 0.05), transparent 40%),
+                linear-gradient(135deg, #0b1628 0%, #070d18 100%);
 }
 
 .how-it-works h2 {
@@ -408,6 +421,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 60px;
+    color: white;
 }
 
 .steps.simple-list {
@@ -421,9 +435,10 @@ body {
     position: relative;
     padding: 20px 20px 20px 68px;
     border-radius: 14px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -449,6 +464,7 @@ body {
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 8px;
+    color: white;
 }
 
 .steps.simple-list .step p {
@@ -457,13 +473,15 @@ body {
 
 .steps.simple-list .step:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 /* Section Technologie */
 .technology {
     padding: 100px 0;
-    background: var(--surface);
+    background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.08), transparent 60%),
+                linear-gradient(135deg, #070d18 0%, #0b1628 100%);
 }
 
 .tech-header {
@@ -474,7 +492,7 @@ body {
 .tech-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #0b1224;
+    color: white;
 }
 
 .tech-features {
@@ -485,12 +503,13 @@ body {
 }
 
 .tech-feature.clean {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 32px;
     border-radius: 16px;
     text-align: left;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    border: 1px solid rgba(6, 182, 212, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 1px solid rgba(6, 182, 212, 0.25);
     position: relative;
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -498,7 +517,8 @@ body {
 
 .tech-feature.clean:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .tech-feature.clean::after {
@@ -515,6 +535,7 @@ body {
     margin-bottom: 12px;
     position: relative;
     z-index: 1;
+    color: white;
 }
 
 .tech-feature.clean p {
@@ -536,11 +557,20 @@ body {
 }
 
 .roadmap {
-    background: white;
+    background: rgba(6, 182, 212, 0.08);
+    backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 12px;
     text-align: center;
     border: 2px solid var(--primary-color);
+}
+
+.roadmap h3 {
+    color: white;
+}
+
+.roadmap p {
+    color: var(--text-secondary);
 }
 
 .roadmap h3 {
@@ -578,7 +608,8 @@ body {
 }
 
 .value-prop {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     padding: 24px;
@@ -589,12 +620,14 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: white;
 }
 
 .value-prop p {
     font-size: 0.95rem;
     opacity: 0.9;
     margin-bottom: 0;
+    color: var(--text-secondary);
 }
 
 .cta-buttons {
@@ -663,7 +696,8 @@ body {
 
 /* Page Hero (pages internes) */
 .page-hero {
-    background: linear-gradient(135deg, var(--surface) 0%, rgba(6, 182, 212, 0.08) 100%);
+    background: radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.1), transparent 30%),
+                linear-gradient(135deg, #070d18 0%, #0b1628 100%);
     padding: 100px 0 80px;
     text-align: center;
     border-bottom: 1px solid var(--border);
@@ -673,6 +707,7 @@ body {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 16px;
+    color: white;
 }
 
 .page-hero .lead {
@@ -685,6 +720,7 @@ body {
 /* Tech Detail Page */
 .tech-detail, .legal-tech, .tech-roadmap {
     padding: 80px 0;
+    background: linear-gradient(135deg, #070d18 0%, #0b1628 100%);
 }
 
 .tech-detail h2, .legal-tech h2, .tech-roadmap h2 {
@@ -692,6 +728,7 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 48px;
+    color: white;
 }
 
 .tech-grid {
@@ -700,11 +737,12 @@ body {
 }
 
 .tech-detail-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 32px;
     border-radius: 16px;
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .tech-detail-card h3 {
@@ -717,14 +755,16 @@ body {
 .tech-detail-card p {
     margin-bottom: 12px;
     line-height: 1.7;
+    color: var(--text-secondary);
 }
 
 .tech-detail-card strong {
-    color: var(--text-primary);
+    color: white;
 }
 
 .legal-tech {
-    background: var(--surface);
+    background: radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.06), transparent 50%),
+                linear-gradient(135deg, #0b1628 0%, #070d18 100%);
 }
 
 .legal-grid {
@@ -734,7 +774,8 @@ body {
 }
 
 .legal-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 28px;
     border-radius: 14px;
     border: 1px solid var(--border);
@@ -744,6 +785,11 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 12px;
+    color: white;
+}
+
+.legal-card p {
+    color: var(--text-secondary);
 }
 
 .text-link {
@@ -759,16 +805,17 @@ body {
 }
 
 .roadmap-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 28px;
     border-radius: 14px;
     border-left: 4px solid var(--primary-color);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 
 .roadmap-badge {
     display: inline-block;
-    background: rgba(6, 182, 212, 0.12);
+    background: rgba(6, 182, 212, 0.2);
     color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 6px;
@@ -781,11 +828,17 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: white;
+}
+
+.roadmap-item p {
+    color: var(--text-secondary);
 }
 
 /* Pricing Page */
 .pricing-section {
     padding: 80px 0;
+    background: linear-gradient(135deg, #070d18 0%, #0b1628 100%);
 }
 
 .pricing-grid {
@@ -796,22 +849,25 @@ body {
 }
 
 .pricing-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 16px;
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .pricing-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .pricing-card.featured {
     border: 2px solid var(--primary-color);
     position: relative;
+    background: rgba(6, 182, 212, 0.08);
 }
 
 .pricing-badge {
@@ -831,6 +887,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: white;
 }
 
 .price {
@@ -866,7 +923,8 @@ body {
     padding: 10px 0;
     padding-left: 28px;
     position: relative;
-    border-bottom: 1px solid var(--surface);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
 }
 
 .features-list li:before {
@@ -887,6 +945,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 32px;
+    color: white;
 }
 
 .justification-grid {
@@ -896,9 +955,11 @@ body {
 }
 
 .justification-item {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
     padding: 24px;
     border-radius: 12px;
+    border: 1px solid var(--border);
 }
 
 .justification-item h4 {
@@ -908,11 +969,16 @@ body {
     color: var(--primary-color);
 }
 
+.justification-item p {
+    color: var(--text-secondary);
+}
+
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -921,11 +987,13 @@ body {
     padding: 16px;
     text-align: left;
     border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
 }
 
 .pricing-table th {
-    background: var(--surface);
+    background: rgba(255, 255, 255, 0.08);
     font-weight: 700;
+    color: white;
 }
 
 .table-note {
@@ -941,7 +1009,17 @@ body {
 }
 
 .mission-section {
-    background: var(--surface);
+    background: radial-gradient(circle at 30% 30%, rgba(34, 211, 238, 0.08), transparent 50%),
+                linear-gradient(135deg, #070d18 0%, #0b1628 100%);
+}
+
+.team-section {
+    background: linear-gradient(135deg, #0b1628 0%, #070d18 100%);
+}
+
+.contact-section {
+    background: radial-gradient(circle at 70% 50%, rgba(34, 211, 238, 0.06), transparent 50%),
+                linear-gradient(135deg, #070d18 0%, #0b1628 100%);
 }
 
 .mission-content h2 {
@@ -949,6 +1027,7 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 24px;
+    color: white;
 }
 
 .mission-statement {
@@ -969,7 +1048,8 @@ body {
 }
 
 .stat-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 28px;
     border-radius: 14px;
     text-align: center;
@@ -993,6 +1073,7 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 48px;
+    color: white;
 }
 
 .team-grid {
@@ -1004,12 +1085,13 @@ body {
 }
 
 .team-member {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 32px;
     border-radius: 16px;
     text-align: center;
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .member-avatar {
@@ -1030,6 +1112,7 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 8px;
+    color: white;
 }
 
 .member-role {
@@ -1058,7 +1141,8 @@ body {
 }
 
 .contact-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 28px;
     border-radius: 14px;
     border: 1px solid var(--border);
@@ -1068,6 +1152,11 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 12px;
+    color: white;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
 }
 
 .contact-link {
@@ -1086,6 +1175,7 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: white;
 }
 
 .social-grid {
@@ -1109,7 +1199,8 @@ body {
 }
 
 .legal-section {
-    background: var(--surface);
+    background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.06), transparent 50%),
+                linear-gradient(135deg, #0b1628 0%, #070d18 100%);
 }
 
 .legal-grid {
@@ -1119,7 +1210,8 @@ body {
 }
 
 .legal-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
     padding: 28px;
     border-radius: 14px;
     border: 1px solid var(--border);
@@ -1129,6 +1221,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 16px;
+    color: white;
 }
 
 .legal-item p {
